@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wchat</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="../js/client.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav class="logo-bar">
+    <figure>
+       <img id="logo" src="../images/Wchat.png" alt="Wchat">
+       <figcaption><h1>Welcome to Waifu chat App</h1></figcaption>
+    </figure>
+    </nav>
+    <div class="container">
+        <div class="message" id= "right" style="display: none;"></div>
+
+        <div class="message" id="left" style="display: none;"></div>
+    </div>
+    <div class="send-logo">
+        <form id="send-container" action="#">
+            <audio src='../js/demi-chan-nani-nani.mp3'></audio>
+            <input type="text" id="messageInp" name="messageInp">
+            <button type="submit" id="btn"><img id="sending-logo" src="../images/send-message-icon-png-10.jpg" alt="send-message-icon-png-10"></button>
+        </form>
+    </div>
+</body>
+</html>
